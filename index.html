@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sky High Airlines</h1>
+        <p>Your journey begins here!</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#book">Book a Flight</a></li>
+            <li><a href="#manage">Manage Booking</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>About Us</h2>
+        <p>Sky High Airlines is dedicated to providing a seamless travel experience. Book your flights with confidence and explore the world with us!</p>
+    </section>
+
+    <section id="book">
+        <h2>Book a Flight</h2>
+        <form>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+
+            <label for="date">Departure Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+            </select>
+
+            <button type="submit">Search Flights</button>
+        </form>
+    </section>
+
+    <section id="manage">
+        <h2>Manage Booking</h2>
+        <p>Enter your booking ID to view or modify your booking.</p>
+        <form>
+            <label for="booking-id">Booking ID:</label>
+            <input type="text" id="booking-id" name="booking-id" required>
+            <button type="submit">Find Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sky High Airlines | <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
+</html>
